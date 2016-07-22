@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Image Views</title>
+	<link rel="stylesheet" type="text/css" href="lib/normalize.css">
+	<link rel="stylesheet" href="css/imageView.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js?v=v1e28bc4"></script>
+	<script type="text/javascript" src="js/imageView.js?v=v5f0ec67"></script>
+</head>
+<body>
+	<div class="container">
+		<a href="javascript:void(0)" class="open">
+			3 <span>+</span>
+		</a>
+	</div>
+	<div class="dialog">
+		<div class="d-head">
+			<h1>文件查看</h1>
+		</div>
+		<div class="d-body">
+			<div class="big-img clearfix">
+				<ul>
+					<li class="current"><a href="#"><img src="img/1.jpg?v=v837e503" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/5.jpg?v=v4fe4c3d" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/43.jpg?v=v56db930" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/4.jpg?v=v9a9aa4a" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/6.jpg?v=v221331c" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/7.jpg?v=v9c643fd" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/31.jpg?v=v85dbd0b" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/32.jpg?v=v0a1dbbf" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/33.jpg?v=vcd8226d" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/34.jpg?v=vd815c8e" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/37.jpg?v=v8dc8ece" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/36.jpg?v=v9a0019d" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/38.jpg?v=v9a0019d" alt="" class="img-responsive"></a></li>
+					<li><a href="#"><img src="img/39.jpg?v=v9a0019d" alt="" class="img-responsive"></a></li>
+				</ul>
+				<div class="other-img">
+					<a href="javascript:void(0);" class="btn btn-prev"><</a>
+					<a href="javascript:void(0);" class="btn btn-next">></a>
+				</div>
+			</div>
+			<div class="small-img">
+				<div class="other-img">
+					<a href="javascript:void(0);" class="btn btn-small-prev"><</a>
+					<a href="javascript:void(0);" class="btn btn-small-next">></a>
+				</div>
+			</div>
+		</div>
+		<div class="d-foot clearfix">
+			<a href="javascript:void(0);" class="btn btn-border del right">删除</a>
+			<a href="javascript:void(0);" class="btn btn-border add right">增加</a>
+		</div>
+	</div>
+	<div class="addImg">
+		<input type="file" name="" value="" id="file">
+		<div id="result" name="result"></div>
+	</div>
+</body>
+</html>
