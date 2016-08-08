@@ -214,7 +214,8 @@
 					var reader = new FileReader();
 					var result = reader.readAsDataURL(file);
 					reader.onload = function(e) {
-						_this.settings.r.innerHTML = '<img src="' + this.result + '" alt=""/>';
+						console.log(_this.settings.r);
+						_this.settings.r.html('<img src="' + this.result + '" alt=""/>');
 						_this.append(this.result);
 					}
 				});
