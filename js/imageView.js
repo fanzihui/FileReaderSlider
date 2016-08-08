@@ -32,6 +32,9 @@ $(function() {
 	var btnSmallNext = $('.other-img .btn-small-next');
 	var curr = $('.curr');
 	var del = $('.del');
+	// 小图一排 6个
+	var initL = 6;
+	var speed = 3000;
 
 	// 获取长度和宽
 	var li = $('.big-img ul li').length;
@@ -39,10 +42,6 @@ $(function() {
 	var smallLiW = $('.small-img ul li').outerWidth();
 	var $bigAllW = li * bigLiW;
 	var $smallAllW = li * smallLiW;
-
-	// 小图一排 6个
-	var initL = 6;
-	var speed = 3000;
 
 	// set
 	bigUl.css('width', $bigAllW);
@@ -179,7 +178,7 @@ $(function() {
 				other(Math.floor(li - 1));
 			} else {
 				other(Math.floor(i + initL));
-				i += 6;
+				i += initL;
 			}
 		}
 	};
